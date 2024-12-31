@@ -17,69 +17,27 @@
     color: inherit;
 }
 
-.icon-container {
-    background: #ffffff;
-    width: 40px;
-    height: 40px;
-    border-radius: 0.6rem;
+.icon-wrapper {
+    font-size: 1rem;
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 0.75rem;
-    border: 0.1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.08);
-    transition: transform 0.2s ease;
-    position: relative;
 }
 
-.grid-item:hover .icon-container {
+.grid-item:hover .icon-wrapper {
     transform: translateY(-2px);
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.12);
 }
 
-.icon-wrapper {
-    font-size: 1rem;
-    font-weight: 600;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+.icon-wrapper svg {
+    width: 24px;
+    height: 24px;
 }
 
-/* Fix icon sizing */
-.icon-wrapper i {
-    font-size: 1.1rem;
-    line-height: 1;
-}
-
-/* Icon-specific colors with modern hospitality theme */
-#nearby-btn .icon-wrapper { 
-    color: #000000;
-}
-
-#reviews-btn .icon-wrapper { 
-    color: #000000;
-}
-
-#rules-btn .icon-wrapper { 
-    color: #000000;
-}
-
-#emergency-btn .icon-wrapper { 
-    color: #000000;
-}
-
-#specials-btn .icon-wrapper { 
-    color: #000000;
-}
-
-#book-now-btn .icon-wrapper { 
-    color: #000000;
+.size-6 {
+    width: 24px;
+    height: 24px;
 }
 
 .text-content {
@@ -107,35 +65,34 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .quick-access-grid {
-        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
         padding: 0.3rem;
     }
     
-    .icon-container {
-        width: 28px;
-        height: 28px;
+    .icon-wrapper svg {
+        width: 20px;
+        height: 20px;
     }
     
-    .icon-wrapper {
-        font-size: 0.8rem;
+    .size-6 {
+        width: 20px;
+        height: 20px;
     }
 }
 
 @media (max-width: 480px) {
     .quick-access-grid {
-        grid-template-columns: repeat(2, 1fr);
         gap: 0.75rem;
     }
     
-    .icon-container {
-        width: 24px;
-        height: 24px;
-        margin-bottom: 0.5rem;
+    .icon-wrapper svg {
+        width: 18px;
+        height: 18px;
     }
     
-    .icon-wrapper {
-        font-size: 0.7rem;
+    .size-6 {
+        width: 18px;
+        height: 18px;
     }
     
     .text-content h3 {
@@ -145,51 +102,4 @@
     .text-content p {
         font-size: 0.5rem;
     }
-} 
-} 
-
-.icon-wrapper svg {
-    width: 20px;
-    height: 20px;
-}
-
-.size-6 {
-    width: 20px;
-    height: 20px;
-}
-
-/* Remove the font-size property from .icon-wrapper i since we're not using Font Awesome icons anymore */ 
-
-/* Update text colors to match icon colors */
-#nearby-btn .text-content h3 { 
-    color: #000000;
-}
-
-#reviews-btn .text-content h3 { 
-    color: #000000;
-}
-
-#rules-btn .text-content h3 { 
-    color: #000000;
-}
-
-#emergency-btn .text-content h3 { 
-    color: #000000;
-}
-
-#specials-btn .text-content h3 { 
-    color: #000000;
-}
-
-#book-now-btn .text-content h3 { 
-    color: #000000;
-}
-
-/* Remove the general color setting for h3 since we're using specific colors */
-.text-content h3 {
-    font-size: .75rem;
-    font-weight: 700;
-    margin: 0;
-    line-height: 1.2;
-    color: #000000;
 } 
