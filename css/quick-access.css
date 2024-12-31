@@ -31,13 +31,13 @@
 }
 
 .icon-wrapper svg {
-    width: 35px;
-    height: 35px;
+    width: 26px;
+    height: 26px;
 }
 
 .size-6 {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
 }
 
 .text-content {
@@ -47,7 +47,7 @@
 }
 
 .text-content h3 {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: 700;
     margin: 0;
     line-height: 1.2;
@@ -66,17 +66,17 @@
     }
     
     .icon-wrapper svg {
-        width: 32px;
-        height: 32px;
+        width: 26px;
+        height: 26px;
     }
     
     .size-6 {
-        width: 32px;
-        height: 32px;
+        width: 26px;
+        height: 26px;
     }
 
     .text-content h3 {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 }
 
@@ -87,17 +87,17 @@
     }
     
     .icon-wrapper svg {
-        width: 38px;
-        height: 38px;
+        width: 32px;
+        height: 32px;
     }
     
     .size-6 {
-        width: 38px;
-        height: 38px;
+        width: 32px;
+        height: 32px;
     }
     
     .text-content h3 {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         margin-top: 0.5rem;
     }
 
