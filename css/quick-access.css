@@ -47,11 +47,15 @@
 }
 
 .text-content h3 {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     font-weight: 700;
     margin: 0;
     line-height: 1.2;
     color: #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
 }
 
 .text-content p {
@@ -97,7 +101,7 @@
     }
     
     .text-content h3 {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         margin-top: 0.5rem;
     }
 
